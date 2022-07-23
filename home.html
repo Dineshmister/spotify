@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/spotify.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200&family=Ubuntu:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+
+<body>
+    <style>
+        body{
+            
+            background-image: linear-gradient(-30deg,rgb(14, 13, 13) 60%,rgba(88, 88, 88, 0.966));
+    
+        }
+        .episodes > .img-with-text > img{
+            border-radius: 10px;
+        }
+        .episodes > .img-with-text > .text > small:nth-child(1){
+            color:white;
+
+        }
+        .play-state{
+            animation-play-state: running;
+        }
+        .play-state-play{
+            animation-play-state: paused;
+        }
+        .good > a{
+            text-decoration: none;
+            color: white;
+
+        }
+    </style>
+    <div class="home-container">
+        <div class="welcome">
+            <div class="good"><a href="https://github.com/Dineshmister">dineshmister</a></div>
+            <div class="option-icon">
+                <span>
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 207.948 207.948"
+                        style="enable-background:new 0 0 207.948 207.948;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <g id="_x3C_Compound_Path_x3E__1_">
+                                    <g>
+                                        <g>
+                                            <path style="fill:white;" d="M104.591,207.474c-14.963,0-27.911-13.643-32.006-33.409H4.286c-1.714,0-3.271-1.024-3.94-2.605
+						c-0.676-1.578-0.344-3.403,0.845-4.653c4.406-4.606,8.6-8.181,12.304-11.338c9.101-7.759,14.598-12.444,14.598-24.54V90.918
+						c0.179-34.429,23.098-65.056,54.91-73.978c1.542-6.993,7.136-16.466,20.965-16.466c13.686,0,19.347,9.777,20.936,16.924
+						c31.988,8.954,55.018,39.392,55.182,73.506v41.343c0,11.724,4.864,15.697,13.675,22.894c3.887,3.171,8.285,6.764,12.995,11.671
+						c1.185,1.242,1.525,3.071,0.845,4.653c-0.673,1.578-2.226,2.605-3.94,2.605h-67.071
+						C132.495,193.832,119.554,207.474,104.591,207.474z M81.776,175.608c3.837,13.757,12.938,23.291,22.815,23.291
+						c9.874,0,18.968-9.534,22.808-23.291H81.776z M15.001,165.487h177.826c-1.553-1.321-3.056-2.548-4.481-3.704
+						c-9.398-7.677-16.824-13.739-16.824-29.536V90.918c-0.15-31.168-21.767-58.901-51.407-65.908
+						c-1.829-0.433-3.16-2.008-3.293-3.883c-0.086-1.21-1.288-12.082-12.848-12.082c-11.9,0-12.794,10.368-12.848,11.556
+						c-0.1,1.904-1.446,3.511-3.3,3.944C58.352,31.502,36.84,59.428,36.679,90.943v39.99c0,16.055-8.167,23.008-17.619,31.068
+						C17.761,163.1,16.401,164.26,15.001,165.487z" />
+                                        </g>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path style="fill:white;" d="M126.823,26.746c-0.412,0-0.834-0.061-1.249-0.19c-22.74-6.921-41.497-1.117-41.686-1.056
+					c-2.269,0.716-4.66-0.53-5.383-2.777c-0.723-2.251,0.512-4.66,2.759-5.383c0.862-0.279,21.376-6.721,46.804,1.016
+					c2.265,0.684,3.539,3.081,2.856,5.347C130.359,25.554,128.655,26.746,126.823,26.746z" />
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+
+
+
+                </span>
+                <span>
+                    <a href="https://github.com/Dineshmister" class="ms-auto github">
+                        <svg width="32px" height="32px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 0.396c-8.839 0-16 7.167-16 16 0 7.073 4.584 13.068 10.937 15.183 0.803 0.151 1.093-0.344 1.093-0.772 0-0.38-0.009-1.385-0.015-2.719-4.453 0.964-5.391-2.151-5.391-2.151-0.729-1.844-1.781-2.339-1.781-2.339-1.448-0.989 0.115-0.968 0.115-0.968 1.604 0.109 2.448 1.645 2.448 1.645 1.427 2.448 3.744 1.74 4.661 1.328 0.14-1.031 0.557-1.74 1.011-2.135-3.552-0.401-7.287-1.776-7.287-7.907 0-1.751 0.62-3.177 1.645-4.297-0.177-0.401-0.719-2.031 0.141-4.235 0 0 1.339-0.427 4.4 1.641 1.281-0.355 2.641-0.532 4-0.541 1.36 0.009 2.719 0.187 4 0.541 3.043-2.068 4.381-1.641 4.381-1.641 0.859 2.204 0.317 3.833 0.161 4.235 1.015 1.12 1.635 2.547 1.635 4.297 0 6.145-3.74 7.5-7.296 7.891 0.556 0.479 1.077 1.464 1.077 2.959 0 2.14-0.020 3.864-0.020 4.385 0 0.416 0.28 0.916 1.104 0.755 6.4-2.093 10.979-8.093 10.979-15.156 0-8.833-7.161-16-16-16z" />
+                        </svg>
+                    </a>
+
+
+                </span>
+                <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-gear" viewBox="0 0 16 16">
+                            <path
+                                d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
+                            <path
+                                d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
+                        </svg>
+                </span>
+            </div>
+        </div>
+        <div class="six-grid">
+            <div class="grid-item">
+                <img src="./asset/ani.jpg" alt="">
+                <p>hot hits tamil</p>
+            </div>
+            <div class="grid-item">
+                <img src="./asset/ar.jpg" alt="">
+                <p>latest tamil</p>
+            </div>
+            <div class="grid-item">
+                <img src="./asset/Yuvan.jpg" alt="">
+                <p>trending now tamil</p>
+            </div>
+            <div class="grid-item">
+                <img src="./asset/pexels-pixabay-236149.jpg" alt="">
+                <p>kollywood cream</p>
+            </div>
+            <div class="grid-item">
+                <img src="./asset/dhanush.jpg" alt="">
+                <p>long drive tamil</p>
+            </div>
+            <div class="grid-item">
+                <img src="./asset/Ariana_Grande.webp" alt="">
+                <p>happy vibes</p>
+            </div>
+        </div>
+        <div class="first-one-block-label">
+            <img src="./asset/ar.jpg" alt="">
+            <div class="small-block-text">
+                <small>more like</small>
+                <p class="tamil">latest tamil</p>
+            </div>
+
+        </div>
+        <div class="overflow-img">
+            <div class="img-with-text">
+                <img src="./asset/ani.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/Ariana_Grande.webp" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/id.webp" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/Yuvan.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-eric-esma-894156.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="first-one-block-label label-only-text mt-4">
+            <!-- <img src="./asset/ar.jpg" alt=""> -->
+            <div class="small-block-text">
+                <!-- <small>more like</small> -->
+                <p class="tamil">recommended radio</p>
+            </div>
+
+        </div>
+        <div class="overflow-img">
+            <div class="img-with-text">
+                <img src="./asset/Yuvan.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-pixabay-236149.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-eric-esma-894156.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-cottonbro-5650905.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/id.webp" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="first-one-block-label label-only-text mt-4">
+            <!-- <img src="./asset/ar.jpg" alt=""> -->
+            <div class="small-block-text">
+                <!-- <small>more like</small> -->
+                <p class="tamil">jump back in</p>
+            </div>
+
+        </div>
+        <div class="overflow-img">
+            <div class="img-with-text">
+                <img src="./asset/ani.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/Ariana_Grande.webp" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/id.webp" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/Yuvan.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-eric-esma-894156.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-cottonbro-5650905.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/dhanush.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="first-one-block-label label-only-text mt-4">
+            <!-- <img src="./asset/ar.jpg" alt=""> -->
+            <div class="small-block-text">
+                <!-- <small>more like</small> -->
+                <p class="tamil">episodes for you</p>
+            </div>
+
+        </div>
+        <div class="overflow-img episodes">
+            <div class="img-with-text">
+                <img src="./asset/ar.jpg" alt="">
+                <div class="text">
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, molestiae.</small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-pixabay-236149.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-artem-podrez-6270265.jpg" alt="">
+                <div class="text">
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, autem excepturi? Sunt, mollitia?</small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-cottonbro-5650905.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-eric-esma-894156.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+        </div>
+        <div class="first-one-block-label label-only-text mt-4">
+            <!-- <img src="./asset/ar.jpg" alt=""> -->
+            <div class="small-block-text">
+                <!-- <small>more like</small> -->
+                <p class="tamil">uniquely yours</p>
+            </div>
+
+        </div>
+        <div class="overflow-img">
+            <div class="img-with-text">
+                <img src="./asset/dhanush.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-artem-podrez-6270265.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/id.webp" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/Yuvan.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-eric-esma-894156.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/pexels-cottonbro-5650905.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+            <div class="img-with-text">
+                <img src="./asset/ani.jpg" alt="">
+                <div class="text">
+                    <small>lorem ipsum </small>
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, itaque!</small>
+
+                </div>
+
+
+            </div>
+        </div>
+        
+        
+        
+    </div>
+    <footer>
+        <div class="progress-bar-spotify">
+            <img src="./asset/ani.jpg" alt="">
+            <div class="playing-song">
+                <marquee class="moving-text-spotify">palbo escobar</marquee>
+                <small class="artist-spotify">anirudh ravichander</small>
+            </div>
+            <div class="icons-play-pause">
+                <span>
+                    <svg width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <title>ONE-xicons</title>
+                        <path
+                            d="M17.92,48C12.18,48,7.5,44.17,7.5,39.45s4.68-8.55,10.42-8.55a12,12,0,0,1,6.25,1.7L24,0.5a0.5,0.5,0,0,1,.5-0.5h0a0.5,0.5,0,0,1,.5.5l0.18,44.41a0.51,0.51,0,0,1,0,.14L25,45.57a0.5,0.5,0,0,1-.18.26A11.8,11.8,0,0,1,17.92,48Zm0-16.09c-5.2,0-9.42,3.39-9.42,7.55S12.73,47,17.92,47a10.84,10.84,0,0,0,6.21-1.88l0.08-.29,0-11A10.82,10.82,0,0,0,17.92,31.91Z" />
+                        <path
+                            d="M36.86,13.9a2.19,2.19,0,0,1-.48-0.05L24.7,11.11a0.5,0.5,0,1,1,.23-1L36.6,12.87A1.15,1.15,0,0,0,38,12l1.49-6.27a1.07,1.07,0,0,0-.14-0.82,1.14,1.14,0,0,0-.73-0.51l-14-3.38a0.5,0.5,0,0,1,.24-1l14,3.38a2.13,2.13,0,0,1,1.35,1A2.06,2.06,0,0,1,40.44,6L39,12.27A2.15,2.15,0,0,1,36.86,13.9Z" />
+                        <rect width="48" height="48" fill="none" />
+                    </svg>
+                </span>
+                <span >
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512.37 512.37"
+                        style="enable-background:new 0 0 512.37 512.37;" xml:space="preserve">
+                        <g>
+                            <g>
+                                <path d="M475.524,72.933c-33.872-36.293-72.122-56.78-115.583-56.78c-42.308,0-79.083,19.333-103.742,52.277
+			c-24.591-32.968-61.208-52.277-103.49-52.277c-43.164,0-80.774,20.275-115.429,56.616
+			c-51.87,54.357-52.062,155.013,14.925,221.999c13.003,13.003,45.393,46.322,91.094,93.615
+			c21.934,22.7,44.674,46.277,67.387,69.854c7.95,8.252,15.328,15.915,21.947,22.792c6.806,7.073,6.806,7.073,8.317,8.643
+			c8.393,8.726,22.357,8.726,30.751,0c1.51-1.57,1.51-1.57,8.316-8.643c6.619-6.877,13.997-14.539,21.947-22.792
+			c22.713-23.577,45.453-47.154,66.715-69.158c46.373-47.99,78.763-81.308,91.766-94.312
+			C527.176,228.038,526.702,127.752,475.524,72.933z M430.275,264.599c-13.253,13.253-45.689,46.619-91.606,94.137
+			c-21.952,22.718-44.706,46.31-67.433,69.902c-5.236,5.435-10.224,10.615-14.91,15.482c-4.687-4.868-9.675-10.047-14.911-15.482
+			c-22.727-23.592-45.482-47.184-66.76-69.205c-46.591-48.215-79.026-81.58-92.279-94.833C31.961,214.185,32.102,140,68.154,102.22
+			c27.31-28.64,54.69-43.4,84.555-43.4c37.759,0,68.431,22.518,83.608,61.191c7.085,18.053,32.633,18.053,39.718,0
+			c15.143-38.586,46.063-61.191,83.907-61.191c30.166,0,57.925,14.868,84.393,43.228
+			C480.097,140.355,480.447,214.426,430.275,264.599z" />
+                            </g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+
+                </span>
+                <span class="default">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330"
+                        style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                        <path id="XMLID_308_" d="M37.728,328.12c2.266,1.256,4.77,1.88,7.272,1.88c2.763,0,5.522-0.763,7.95-2.28l240-149.999
+	c4.386-2.741,7.05-7.548,7.05-12.72c0-5.172-2.664-9.979-7.05-12.72L52.95,2.28c-4.625-2.891-10.453-3.043-15.222-0.4
+	C32.959,4.524,30,9.547,30,15v300C30,320.453,32.959,325.476,37.728,328.12z" />
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+
+                </span>
+                <span class="hidden-pause">
+                    <svg width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <title>ONE-xicons</title>
+                        <path
+                            d="M18.5,44H5.5A2.5,2.5,0,0,1,3,41.5V6.5A2.5,2.5,0,0,1,5.5,4h13A2.5,2.5,0,0,1,21,6.5v35A2.5,2.5,0,0,1,18.5,44ZM5.5,5A1.5,1.5,0,0,0,4,6.5v35A1.5,1.5,0,0,0,5.5,43h13A1.5,1.5,0,0,0,20,41.5V6.5A1.5,1.5,0,0,0,18.5,5H5.5Z" />
+                        <path
+                            d="M42.5,44h-13A2.5,2.5,0,0,1,27,41.5V6.5A2.5,2.5,0,0,1,29.5,4h13A2.5,2.5,0,0,1,45,6.5v35A2.5,2.5,0,0,1,42.5,44ZM29.5,5A1.5,1.5,0,0,0,28,6.5v35A1.5,1.5,0,0,0,29.5,43h13A1.5,1.5,0,0,0,44,41.5V6.5A1.5,1.5,0,0,0,42.5,5h-13Z" />
+                        <rect width="48" height="48" fill="none" />
+                    </svg>
+                </span>
+
+            </div>
+            <span class="playing"></span>
+        </div>
+        <div class="bottom-nav">
+            <div class="icon-with-text-spotify">
+                <span>
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                    <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330.242 330.242"
+                        style="enable-background:new 0 0 330.242 330.242;" xml:space="preserve">
+                        <path
+                            d="M324.442,129.811l-41.321-33.677V42.275c0-6.065-4.935-11-11-11h-26c-6.065,0-11,4.935-11,11v14.737l-55.213-44.999
+	c-3.994-3.254-9.258-5.047-14.822-5.047c-5.542,0-10.781,1.782-14.753,5.019L5.8,129.81c-6.567,5.351-6.173,10.012-5.354,12.314
+	c0.817,2.297,3.448,6.151,11.884,6.151h19.791v154.947c0,11.058,8.972,20.053,20,20.053h62.5c10.935,0,19.5-8.809,19.5-20.053
+	v-63.541c0-5.446,5.005-10.405,10.5-10.405h42c5.238,0,9.5,4.668,9.5,10.405v63.541c0,10.87,9.388,20.053,20.5,20.053h61.5
+	c11.028,0,20-8.996,20-20.053V148.275h19.791c8.436,0,11.066-3.854,11.884-6.151C330.615,139.822,331.009,135.161,324.442,129.811z" />
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
+
+                </span>
+                home
+
+
+            </div>
+            <div class="icon-with-text-spotify">
+                <span>
+                    <svg width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><title>ONE-xicons</title><path d="M17.92,48C12.18,48,7.5,44.17,7.5,39.45s4.68-8.55,10.42-8.55a12,12,0,0,1,6.25,1.7L24,0.5a0.5,0.5,0,0,1,.5-0.5h0a0.5,0.5,0,0,1,.5.5l0.18,44.41a0.51,0.51,0,0,1,0,.14L25,45.57a0.5,0.5,0,0,1-.18.26A11.8,11.8,0,0,1,17.92,48Zm0-16.09c-5.2,0-9.42,3.39-9.42,7.55S12.73,47,17.92,47a10.84,10.84,0,0,0,6.21-1.88l0.08-.29,0-11A10.82,10.82,0,0,0,17.92,31.91Z"/><path d="M36.86,13.9a2.19,2.19,0,0,1-.48-0.05L24.7,11.11a0.5,0.5,0,1,1,.23-1L36.6,12.87A1.15,1.15,0,0,0,38,12l1.49-6.27a1.07,1.07,0,0,0-.14-0.82,1.14,1.14,0,0,0-.73-0.51l-14-3.38a0.5,0.5,0,0,1,.24-1l14,3.38a2.13,2.13,0,0,1,1.35,1A2.06,2.06,0,0,1,40.44,6L39,12.27A2.15,2.15,0,0,1,36.86,13.9Z"/><rect width="48" height="48" fill="none"/></svg>
+                </span>
+                search
+
+            </div>
+            <div class="icon-with-text-spotify">
+                <span>
+                    <svg width="48px" height="48px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                        <title>ONE-xicons</title>
+                        <path d="M18.93,15.21a0.5,0.5,0,0,1-.12-1L43.69,8.09a0.5,0.5,0,0,1,.24,1L19.05,15.2H18.93Z" />
+                        <path
+                            d="M12.76,47.58c-5.07,0-9.2-3.39-9.2-7.55s4.13-7.55,9.2-7.55a10.59,10.59,0,0,1,5.41,1.44L18.06,7.63a2.52,2.52,0,0,1,2-2.45l21.22-4.7a2.5,2.5,0,0,1,3,2.43l0.15,36.31a0.52,0.52,0,0,1,0,.14l-0.13.46a0.5,0.5,0,0,1-.18.26A10.41,10.41,0,0,1,38,42c-5.07,0-9.2-3.39-9.2-7.55s4.12-7.55,9.2-7.55a10.59,10.59,0,0,1,5.41,1.44L43.29,2.92a1.5,1.5,0,0,0-1.82-1.46L20.24,6.16a1.51,1.51,0,0,0-1.18,1.47L19.22,44.8a0.52,0.52,0,0,1,0,.14l-0.13.46a0.5,0.5,0,0,1-.18.26A10.4,10.4,0,0,1,12.76,47.58Zm0-14.1c-4.52,0-8.2,2.94-8.2,6.55s3.68,6.55,8.2,6.55A9.44,9.44,0,0,0,18.15,45l0.06-.22,0-9.62A9.43,9.43,0,0,0,12.76,33.48ZM38,27.89c-4.52,0-8.2,2.94-8.2,6.55S33.46,41,38,41a9.45,9.45,0,0,0,5.39-1.62l0.06-.22,0-9.62A9.43,9.43,0,0,0,38,27.89Z" />
+                        <rect width="48" height="48" fill="none" />
+                    </svg>
+                </span>
+                your library
+
+            </div>
+            <div class="icon-with-text-spotify">
+                <span>
+                    <svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg">
+                        <title>Spotify icon</title>
+                        <path
+                            d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                    </svg>
+                </span>
+                premium
+
+            </div>
+
+
+        </div>
+
+    </footer>
+    <script src="./asset/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // location.reload()
+
+            $(".default").on("click",function(){
+                $(".hidden-pause").show()
+                $(".playing").toggleClass("play-state")
+                
+                
+                $(this).hide()
+                
+            })
+            $(".hidden-pause").on("click",function(){
+                $(this).hide()
+                $(".playing").toggleClass("play-state-play")
+                $(".default").show()
+                
+            })
+        })
+    </script>
+
+</body>
+
+</html>
