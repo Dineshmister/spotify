@@ -14,5 +14,5 @@ Spotify mobile version frontend
 
 *__You can see the demo here__*
 
-https://dineshmister.github.io/spotify/
+https://dineshmister.github.io/spotify/home
 > This wasn't designed for desktop version
